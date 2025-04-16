@@ -4,6 +4,7 @@ import Layout from './components/Layout';
 import Chat from './pages/Chat';
 import Settings from './pages/Settings';
 import History from './pages/History';
+import MCPFeatures from './pages/MCPFeatures';
 import { AppContext } from './contexts/AppContext';
 import { SettingsType } from './types';
 
@@ -83,6 +84,7 @@ const App = () => {
           <Route index element={<Chat />} />
           <Route path="settings" element={<Settings />} />
           <Route path="history" element={<History />} />
+          <Route path="mcp-features" element={<MCPFeatures />} />
         </Route>
       </Routes>
     </AppContext.Provider>
