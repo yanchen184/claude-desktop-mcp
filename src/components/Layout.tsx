@@ -1,5 +1,5 @@
 import { Outlet, Link, useLocation } from 'react-router-dom';
-import { ChatBubbleLeftRightIcon, Cog6ToothIcon, ClockIcon } from '@heroicons/react/24/outline';
+import { ChatBubbleLeftRightIcon, Cog6ToothIcon, ClockIcon, PuzzlePieceIcon } from '@heroicons/react/24/outline';
 
 const Layout = () => {
   const location = useLocation();
@@ -45,6 +45,15 @@ const Layout = () => {
               >
                 <ClockIcon className="w-6 h-6" />
                 <span className="hidden md:inline ml-3">歷史記錄</span>
+              </Link>
+            </li>
+            <li>
+              <Link 
+                to="/mcp-features" 
+                className={`flex items-center p-2 rounded-md ${isActive('/mcp-features')}`}
+              >
+                <PuzzlePieceIcon className="w-6 h-6" />
+                <span className="hidden md:inline ml-3">MCP 功能</span>
               </Link>
             </li>
             <li>
